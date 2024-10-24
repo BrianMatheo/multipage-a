@@ -1,6 +1,8 @@
 ---
     import Layout from '../layouts/Layout.astro';
     import Button from '../components/Button.astro';
+    import { Icon } from 'astro-icon/components'
+
 ---
 
 <Layout title="Contacto">
@@ -17,4 +19,11 @@
             Botón 2
         </span>
 	</Button>
+    <div class="flex flex-row items-center">
+        <Icon name="Platzi" size="56" class="text-xl text-green-400"/><p class="text-green-400 text-[56px] font-semibold">Platzi</p>
+    </div>
+    <Icon name="mdi:brightness-5" size="56" class="text-red-400"/>
+    <Icon name="svg-spinners:wind-toy" size="56"/>
+    <Icon name="hugeicons:ai-chat-02" size="56"/>
+    <span class="font-['Montserrat'] ">con mi propia fuente</span>
 </Layout>
