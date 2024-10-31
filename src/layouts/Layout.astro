@@ -8,17 +8,24 @@ const { title = "No name" } = Astro.props;
 		<meta charset="UTF-8" />
 		<meta name="description" content="Astro description" />
 		<meta name="viewport" content="width=device-width" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<link rel="icon" type="image/svg+xml" href="/Platzi.svg" />
 		<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
 		<meta name="generator" content={Astro.generator} />
+		
 		<title>{title}</title>
 	</head>
-	<body class="font-['Montserrat']">
-	<header class="w-full bg-orange-400 h-20 ">
-
+	<body >
+		<div class="h-10 bg-blue-500">
+			Preheader
+		</div>
+	<header class="sticky top-0 w-full bg-orange-400 h-20 flex justify-between px-10">
+		<p>top</p>
+		<p>global</p>
+		<p>si</p>
+		<p>o</p>
+		<p>no</p>
 	</header>
-	<menu class="flex
-	 bg-slate-400">
+	<menu class="flex bg-slate-400 top-[80px]">
 		<li>
 			<a href="/" class="block hover:bg-white/30 px-4">Inicio</a>
 		</li>
@@ -38,10 +45,11 @@ const { title = "No name" } = Astro.props;
 	<slot />
 	</body>
 </html>
+
 <style is:global>
-@font-face {
-  font-family: 'Montserrat';
-  src: url('/fonts/Montserrat-VariableFont_wght.ttf') format('ttf');
+	@font-face {
+  font-family: 'myfont';
+  src: url('/fonts/PlaywriteGBS-VariableFont_wght.ttf');
   font-weight: normal;
   font-style: normal;
   font-display: swap;
