@@ -1,7 +1,9 @@
 ---
+    import FirstComponent from '../components/vue/FirstComponent.vue';
     import Layout from '../layouts/Layout.astro';
 ---
 
 <Layout title="Quienes somos">
     Pagina de quienes somos
+    <FirstComponent client:load />
 </Layout>
